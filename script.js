@@ -1,5 +1,5 @@
 $(_=>{
-    //goPage2();
+    
 //To hide loading page when loaded
 setTimeout(_=>$('#page-ld').fadeOut(500),500);
 $('#tutorial-button').click(_=>$('#tutorial').slideToggle(200));

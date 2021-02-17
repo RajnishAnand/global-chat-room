@@ -306,7 +306,6 @@ a{text-decoration:none;}
     margin:5px;
     margin-top:10px;
     word-wrap:break-word;
-    font-family:sans-serif;
     animation:msgPop 5s ease;
 }
 @keyframes msgPop {0%{background:#0080BA;}}
