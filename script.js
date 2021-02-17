@@ -89,9 +89,12 @@ function addMsg(_){
         .text(_.val().tym);
     $(el1).appendTo($(el0));
     $(el0).appendTo($('#msg-disp')) 
-    $('#msg-disp')[0].scrollTop = $('#msg-disp')[0].scrollHeight;
+    $('#msg-disp')[0].scrollTop = $('#msg-disp')[0].scrollHeight+10;
     
 };
+
+//To scroll to bottom when input is focused
+$('#inp-msg').on('focus',_=>setTimeout(_=>$('#msg-disp')[0].scrollTop = $('#msg-disp')[0].scrollHeight+10, 300));
 
 let allUsersCol={};
 //To place new User's name & specific color
