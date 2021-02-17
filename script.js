@@ -73,16 +73,16 @@ function addMsg(_){
     if(imy=='i'){
         if(CMsgs[0][0]==_.val().user[0]&&CMsgs[0][1]==_.val().user[1]){
             CMsgs[1]++;
-            if (CMsgs[1]==5){
+            if (CMsgs[1]>6|| CMsgs==0){
                 addUser(CMsgs[0]);
-                CMsgs[1]=0;
+                CMsgs[1]=1;
             };
         }
         else{
             CMsgs=[_.val().user,1];
             addUser(CMsgs[0]);
         };
-    };
+    }else{}
     let el0=$(`<div class="msg-${imy}"></div>)`)
         .text(_.val().txt);
     let el1= $('<div class="tym-stmp"></div>')
