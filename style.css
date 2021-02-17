@@ -270,6 +270,7 @@ a{text-decoration:none;}
     grid-template-rows:35px;
     border-top:1px solid #003755 ;
     border-bottom:1px solid #003755 ;
+    margin-top:3px;
 }
 #msg-disp{
     width:100%;
