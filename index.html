@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="res/jquery-3.5.1.js"></script>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <title>Global Chat Room</title>
+</head>
+
+<body>
+    <!--Loading Page-->
+    <div id="page-ld">
+        <div class="loading-ico"></div>
+    </div>
+    
+    <!--First Page-->
+    <div id="page1">
+        <h1 id="headlin">Global Chat Room</h1>
+        <p>
+             Welcome to solo chat Room. Please Do not share any sensitive information. 
+          
+        </p>
+        <img src="https://i.pinimg.com/originals/e3/1b/75/e31b752875679b64fce009922f9f0dda.gif">
+        <div id="user-form">
+            <input id="username" type="text" placeholder="Enter Your Name" maxlength="20"/>
+            <input id="join" type="submit" value="Join"/>
+            <div class="fetching"></div>
+        </div>
+        <div class="imp2">
+            <input type="checkbox" checked id="term-and" />
+            <label for="term-and">i will be respectful to everyone.</label>
+        </div>
+
+ 
+
+    </div>
+    <div id="page2">
+        <div id="msg-disp">
+            
+            <div class="user-i" contenteditable="true">
+                🚀🚀
+            </div>
+            <div class="msg-i" contenteditable="true">
+                Hello world! 
+                <div class="tym-stmp">12:00AM</div>
+            </div>
+            <div class="msg-my" contenteditable="true">
+                world : hmmm🧐
+            </div>
+        </div>
+        <div id="send-box">
+            <svg class="other-msg-op">
+                <circle cx="50%" cy="50%" r="8px"/>
+                <path d="
+                    M17.5 13 L17.5 22, 
+                    M22 17.5, L13 17.5
+                ">
+            </svg>
+            <input type="text" id="inp-msg" placeholder="Enter your message" maxlength="300">
+            <svg class="send-icon">
+                <path d="
+                    M10 15,
+                    L22.5 17.5,
+                    L10 20, 
+                    L10 30,
+                    L45 17.5,
+                    L10 5,
+                    L10 15
+                "/>
+            </svg>
+        </div>
+    </div>
+    
+
+
+<script src="https://www.gstatic.com/firebasejs/8.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script><!----->
+<script src='res/config.js'></script>
+<script src='script.js'></script><!---->
+</body>
+
+</html>
