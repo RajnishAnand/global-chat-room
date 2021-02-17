@@ -259,6 +259,7 @@ a{text-decoration:none;}
     left:100%;
     overflow:hidden;
     grid-template-rows:auto 38px;
+    grid-gap:2px;
 }
 .msg-cont{
     position:relative;
@@ -270,7 +271,6 @@ a{text-decoration:none;}
     grid-template-rows:35px;
     border-top:1px solid #003755 ;
     border-bottom:1px solid #003755 ;
-    margin-top:3px;
 }
 #msg-disp{
     width:100%;
