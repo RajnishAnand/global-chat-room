@@ -76,13 +76,13 @@ function addMsg(_){
             if (CMsgs[1]>6|| CMsgs==0){
                 addUser(CMsgs[0]);
                 CMsgs[1]=1;
-            };
+            }; 
         }
         else{
             CMsgs=[_.val().user,1];
             addUser(CMsgs[0]);
         };
-    }else{}
+    }else{CMsgs[1]=0;}
     let el0=$(`<div class="msg-${imy}"></div>)`)
         .text(_.val().txt);
     let el1= $('<div class="tym-stmp"></div>')
