@@ -146,35 +146,7 @@ button:active{
     100%{transform:translate(-50%,-50%) rotate(360deg);}
 }
 
-.typ-1-button-container,
-.typ-2-button-container{
-    margin:5px;
-    display:grid;
-    grid-template-columns:auto auto ;
-    grid-template-rows:2em;
-    grid-gap:5px;
-}
-.typ-1-button-container{display:none;}
-#quick-visit{
-    height:100%;
-    width:100%;
-}
-a{text-decoration:none;}
-
-#tutorial{
-    background:#00000055;
-    color:#ddddee;
-    position:relative;
-    left:50%;
-    transform:translate(-50%);
-    overflow:hidden;
-}
-#tutorial-img1{
-    float:right;
-    clip-path: circle(65% at 100% 0);
-    shape-outside:  circle(65% at 100% 0);
-}
-#tutorial-img2{float:left;}
+a{text-decoration:none;} 
 .popup-c{
     background:#ff000022;
     position:fixed;
@@ -200,51 +172,7 @@ a{text-decoration:none;}
     left:0;
     overflow:auto;
 }
-#page-container0{
-    position:relative;
-    top:2em;
-    margin-bottom:5em;
-    width:85%;
-    left:50%;
-    transform:translate(-50%);
-    background:#ffffff55;
-    backdrop-filter:blur(5px);
-    border-radius:5em;
-    display:grid;
-    grid-template-columns:60px auto auto;
-    grid-template-rows:35px 25px;
-    display:none;
-}
-.profile-pik{
-    border:3px solid #0A2C56;
-    border-radius:50%;
-    box-shadow:0 0 0 5px #429FDD, 
-    0 0 0 16px #A4F0FF;
-    grid-row:span 2;       
-}
-.solo-name{
-    background:#ffffff00;
-    color:#000000;
-    margin-left:20px;
-    border-radius:0 1em 1em 0 ;
-    line-height:35px;
-    text-shadow:5px 5px 10px #00000022; 
-    font-size:1.5em;
-    font-weight:700;
-    font-family:sans-serif;
-    grid-column:span 2;
-    overflow:hidden;
-}
-.solo-level{
-    background:#A4F0FF;
-    margin-left:5px;
-    width:6em;
-    border-radius:0 1em 1em 0;
-    text-align:center;
-    line-height :25px;
-    color:#222222;
-    overflow:hidden;
-}
+
 /***************************************/
 
 
