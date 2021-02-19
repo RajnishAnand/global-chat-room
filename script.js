@@ -20,7 +20,7 @@ $('#join').click(()=>{
     if($('#term-and')[0].checked){
         miniLoader1(true);
         if($('#username').val().length<1){
-            [...'Anonymous'].forEach((i,r)=>{
+            [...'👤Anonymous'].forEach((i,r)=>{
                 setTimeout(_=>{
                     $('#username')[0].value+=i
                 },r*50);

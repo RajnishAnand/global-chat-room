@@ -232,7 +232,7 @@ a{text-decoration:none;}
     min-width:75px;/*75*/
     padding:5px;
     padding-bottom:7px;
-    margin:5px 9px;
+    margin:3px 9px;
     margin-top:10px;
     word-wrap:break-word;
     animation:msgPop 5s ease;
@@ -294,6 +294,24 @@ a{text-decoration:none;}
     position:relative;
     bottom:-10px;
     z-index:2 ;
+}
+
+.contact-c{
+    background:#014D6D;
+    border:2px solid #0274A4;
+    border-radius:5px;
+    margin:5px;
+    box-shadow:0 0 0 1px #023a75;
+}
+.contact-c legend{
+    border: 2px solid #0274A4;
+    border-radius:5px;
+    padding:0 10px;
+    background:inherit;
+}
+.contact-c img{
+    width:30px;
+    margin:0 10px;
 }
 
 *{outline:solid 0px #f00;}
