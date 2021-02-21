@@ -88,12 +88,11 @@ function addMsg(_){
         .text(_.val().txt);
     let el1= $('<div class="tym-stmp"></div>')
         .text(_.val().tym);
-    $(el1).appendTo($(el0))
-    
-  if(CMsgs[0][0]=='Delete'){$(el1).click(()=>frb.ref('mssgs/'+_.key).remove());};
-    
+    $(el1).appendTo($(el0));
     $(el0).appendTo($('#msg-disp'));
+        
     $('#msg-disp')[0].scrollTop = $('#msg-disp')[0].scrollHeight+10;
+    
 };
 //To delete messages
 function delMsg(_){$(`#${_.key}`).html('<i>This message was deleted.</i>')};
