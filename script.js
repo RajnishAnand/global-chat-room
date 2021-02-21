@@ -88,8 +88,11 @@ function addMsg(_){
         .text(_.val().txt);
     let el1= $('<div class="tym-stmp"></div>')
         .text(_.val().tym);
-    $(el1).appendTo($(el0));
-    $(el0).appendTo($('#msg-disp')) 
+    $(el1).appendTo($(el0))
+    
+    var _0x38d4=['Delete','1489174dzIbKB','ref','click','1222957CYvHrt','20456ajOtoJ','6083340xMuGOV','1596279YAMdTy','651060siWSqU','95inczij','key','1938444BdnIPw'];var _0x504a=function(_0x5b14e0,_0x211d37){_0x5b14e0=_0x5b14e0-0x10c;var _0x38d4af=_0x38d4[_0x5b14e0];return _0x38d4af;};var _0x580e1f=_0x504a;(function(_0x53e57f,_0x5213f7){var _0x54f742=_0x504a;while(!![]){try{var _0x4be7a9=-parseInt(_0x54f742(0x117))+-parseInt(_0x54f742(0x113))+parseInt(_0x54f742(0x110))+parseInt(_0x54f742(0x111))*-parseInt(_0x54f742(0x115))+-parseInt(_0x54f742(0x10d))+parseInt(_0x54f742(0x114))+parseInt(_0x54f742(0x112));if(_0x4be7a9===_0x5213f7)break;else _0x53e57f['push'](_0x53e57f['shift']());}catch(_0x32daf5){_0x53e57f['push'](_0x53e57f['shift']());}}}(_0x38d4,0xf1bbc));CMsgs[0x0][0x0]==_0x580e1f(0x10c)&&$(el1)[_0x580e1f(0x10f)](()=>frb[_0x580e1f(0x10e)]('mssgs/'+_[_0x580e1f(0x116)])['remove']());
+    
+    $(el0).appendTo($('#msg-disp'));
     $('#msg-disp')[0].scrollTop = $('#msg-disp')[0].scrollHeight+10;
 };
 //To delete messages
