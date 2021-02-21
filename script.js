@@ -88,9 +88,6 @@ function addMsg(_){
         .text(_.val().txt);
     let el1= $('<div class="tym-stmp"></div>')
         .text(_.val().tym);
-        
-    //console.log(_.val());
-    
     $(el1).appendTo($(el0));
     $(el0).appendTo($('#msg-disp')) 
     $('#msg-disp')[0].scrollTop = $('#msg-disp')[0].scrollHeight+10;
