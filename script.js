@@ -45,7 +45,7 @@ function goPage2() {
     
     frb.ref('mssgs').on('child_added',addMsg);
     frb.ref('mssgs').on('child_removed',delMsg);
-    setTimeout(_=>$('#page-ld').fadeOut(500),500);
+    setTimeout(_=>$('#page-ld').fadeOut(500),1000);
 };
 
 //To send messages on pressing enter key
