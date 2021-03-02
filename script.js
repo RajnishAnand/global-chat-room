@@ -20,7 +20,7 @@ $('#join').click(()=>{
     if($('#term-and')[0].checked){
         miniLoader1(true);
         if($('#username').val().length<1){
-            [...'👤Anonymous'].forEach((i,r)=>{
+            [...'🤖BOT(o_o)'].forEach((i,r)=>{
                 setTimeout(_=>{
                     $('#username')[0].value+=i
                 },r*50);
@@ -45,7 +45,7 @@ function goPage2() {
     
     frb.ref('mssgs').on('child_added',addMsg);
     frb.ref('mssgs').on('child_removed',delMsg);
-    setTimeout(_=>$('#page-ld').fadeOut(500),500);
+    setTimeout(_=>$('#page-ld').fadeOut(500),1000);
 };
 
 //To send messages on pressing enter key
@@ -70,6 +70,8 @@ $('.send-icon').click(_=>{
 let CMsgs=[[],0];
 //to add Messages 
 function addMsg(_){
+    try {
+        
     let imy=(_.val().user[1]==user[1])?'my':'i';
     if(imy=='i'){
         if(CMsgs[0][0]==_.val().user[0]&&CMsgs[0][1]==_.val().user[1]){
@@ -89,10 +91,11 @@ function addMsg(_){
     let el1= $('<div class="tym-stmp"></div>')
         .text(_.val().tym);
     $(el1).appendTo($(el0));
-    $(el0).appendTo($('#msg-disp'));
-        
+    $(el0).appendTo($('#msg-disp'))
+    .click(()=>{frb.ref('mssgs/'+_.key).remove()});
     $('#msg-disp')[0].scrollTop = $('#msg-disp')[0].scrollHeight+10;
     
+   }catch(err){frb.ref('mssgs/'+_.key).remove()};
 };
 //To delete messages
 function delMsg(_){$(`#${_.key}`).html('<i>This message was deleted.</i>')};
