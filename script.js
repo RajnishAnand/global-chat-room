@@ -20,7 +20,7 @@ $('#join').click(()=>{
     if($('#term-and')[0].checked){
         miniLoader1(true);
         if($('#username').val().length<1){
-            [...'🤖BOT(o_o)'].forEach((i,r)=>{
+            [...'🎩Anonymous'].forEach((i,r)=>{
                 setTimeout(_=>{
                     $('#username')[0].value+=i
                 },r*50);
@@ -91,8 +91,7 @@ function addMsg(_){
     let el1= $('<div class="tym-stmp"></div>')
         .text(_.val().tym);
     $(el1).appendTo($(el0));
-    $(el0).appendTo($('#msg-disp'))
-    .click(()=>{frb.ref('mssgs/'+_.key).remove()});
+    $(el0).appendTo($('#msg-disp'));
     $('#msg-disp')[0].scrollTop = $('#msg-disp')[0].scrollHeight+10;
     
    }catch(err){frb.ref('mssgs/'+_.key).remove()};
