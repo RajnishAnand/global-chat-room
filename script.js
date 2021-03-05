@@ -43,7 +43,7 @@ function goPage2() {
     $('#page1').animate({left:'-100%'},0);
     $('#page2').animate({left:'0'}, 0);
     
-    frb.ref('mssgs').on('child_added',addMsg);
+    frb.ref('mssgs').limitToLast(40).on('child_added',addMsg);
     frb.ref('mssgs').on('child_removed',delMsg);
     setTimeout(_=>$('#page-ld').fadeOut(500),1000);
 };
@@ -70,8 +70,8 @@ $('.send-icon').click(_=>{
 let CMsgs=[[],0];
 //to add Messages 
 function addMsg(_){
+    if($(`#${_.key}`).length){return};
     try {
-        
     let imy=(_.val().user[1]==user[1])?'my':'i';
     if(imy=='i'){
         if(CMsgs[0][0]==_.val().user[0]&&CMsgs[0][1]==_.val().user[1]){
@@ -93,7 +93,6 @@ function addMsg(_){
     $(el1).appendTo($(el0));
     $(el0).appendTo($('#msg-disp'));
     $('#msg-disp')[0].scrollTop = $('#msg-disp')[0].scrollHeight+10;
-    
    }catch(err){frb.ref('mssgs/'+_.key).remove()};
 };
 //To delete messages
