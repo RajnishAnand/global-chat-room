@@ -43,9 +43,12 @@ function goPage2() {
     $('#page1').animate({left:'-100%'},0);
     $('#page2').animate({left:'0'}, 0);
     
-    frb.ref('mssgs').limitToLast(40).on('child_added',addMsg);
+    $.when(frb.ref('mssgs')
+    .limitToLast(40)
+    .on('child_added',addMsg))
+    .then(setTimeout(_=>$('#page-ld').fadeOut(500),500));
+    
     frb.ref('mssgs').on('child_removed',delMsg);
-    setTimeout(_=>$('#page-ld').fadeOut(500),1000);
 };
 
 //To send messages on pressing enter key
